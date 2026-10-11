@@ -55,7 +55,7 @@ if (DEBUG_MODE) console.log('[CONFIG] Debug mode: ENABLED (verbose reasoning + f
 function validateConfig() {
   const fatal = (msg) => { console.error(`[FATAL] ${msg}`); process.exit(1); };
   if (!NIM_API_KEY) fatal('NIM_API_KEY is required. Get one at https://build.nvidia.com/');
-  if (!CLIENT_AUTH_KEY) {test-key
+  if (!CLIENT_AUTH_KEY) {
     console.warn('[WARN] CLIENT_AUTH_KEY not set. All requests will be rejected with 403.');
   }
 }
